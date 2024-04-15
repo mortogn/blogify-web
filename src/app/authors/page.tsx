@@ -1,3 +1,5 @@
+export const revalidate = 60;
+
 import AuthorCard from "@/components/author-card";
 import PageHeading from "@/components/page-heading";
 import { client } from "@/lib/sanity";

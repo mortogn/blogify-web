@@ -14,4 +14,6 @@ const PageHeading: FC<Props> = ({ description, heading }) => {
   );
 };
 
+PageHeading.displayName = "PageHeading";
+
 export default PageHeading;

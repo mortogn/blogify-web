@@ -14,4 +14,6 @@ const SectionHeading: FC<Props> = ({ description, heading }) => {
   );
 };
 
+SectionHeading.displayName = "SectionHeading";
+
 export default SectionHeading;

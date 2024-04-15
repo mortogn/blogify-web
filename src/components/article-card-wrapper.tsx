@@ -11,4 +11,6 @@ const ArticleCardWrapper: FC<Props> = ({ children, className, ...props }) => {
   );
 };
 
+ArticleCardWrapper.displayName = "ArticleCardWrapper";
+
 export default ArticleCardWrapper;

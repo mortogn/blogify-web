@@ -26,4 +26,6 @@ const SearchInput: FC<Props> = ({ onSubmit }) => {
   );
 };
 
+SearchInput.displayName = "SearchInput";
+
 export default SearchInput;

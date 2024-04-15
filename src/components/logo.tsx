@@ -8,4 +8,6 @@ const Logo = () => {
   return <h2 className={"text-3xl font-space-grotesk"}>Blogify</h2>;
 };
 
+Logo.displayName = "Logo";
+
 export default Logo;

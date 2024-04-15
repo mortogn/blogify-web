@@ -1,3 +1,5 @@
+export const revalidate = 60;
+
 import { client, urlFor } from "@/lib/sanity";
 import { Metadata } from "next";
 import { SanityDocument } from "next-sanity";

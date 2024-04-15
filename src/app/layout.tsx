@@ -1,3 +1,5 @@
+export const revalidate = 60;
+
 import type { Metadata } from "next";
 import { Poppins, Space_Grotesk } from "next/font/google";
 import "./globals.css";
@@ -40,17 +42,24 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
+const SITE_QUERY = `
+*[_type=="siteSettings"] {
+    footer
+}[0]
+`;
+
 export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const site = await client.fetch(SITE_QUERY);
   return (
     <html lang="en">
       <body className={cx(space_grotesk.variable, poppins.variable)}>
         <Header />
         <MaxWidthWrapper className="mb-20">{children}</MaxWidthWrapper>
-        <Footer />
+        <Footer site={site} />
       </body>
     </html>
   );

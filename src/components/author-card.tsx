@@ -21,4 +21,6 @@ const AuthorCard: FC<Props> = ({ bio, image, name }) => {
   );
 };
 
+AuthorCard.displayName = "AuthorCard";
+
 export default AuthorCard;

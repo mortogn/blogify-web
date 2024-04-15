@@ -23,4 +23,6 @@ const MaxWidthWrapper: FC<Props> = ({ size, className, children, ...props }) => 
   );
 };
 
+MaxWidthWrapper.displayName = "MaxWidthWrapper";
+
 export default MaxWidthWrapper;

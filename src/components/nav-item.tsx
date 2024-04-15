@@ -38,4 +38,6 @@ const NavItem: FC<Props> = ({ href, label }) => {
   );
 };
 
+NavItem.displayName = "NavItem";
+
 export default NavItem;

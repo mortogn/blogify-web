@@ -1,3 +1,5 @@
+export const revalidate = 60;
+
 import PageHeading from "@/components/page-heading";
 import React from "react";
 import Search from "./_search";

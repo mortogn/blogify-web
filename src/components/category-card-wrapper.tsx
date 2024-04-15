@@ -11,4 +11,6 @@ const CategoryCardWrapper: FC<Props> = ({ children, className, ...props }) => {
   );
 };
 
+CategoryCardWrapper.displayName = "CategoryCardWrapper";
+
 export default CategoryCardWrapper;

@@ -1,18 +1,14 @@
-import React from "react";
+import React, { FC } from "react";
 import MaxWidthWrapper from "./max-width-wrapper";
 import Logo from "./logo";
 import { client } from "@/lib/sanity";
 import Link from "next/link";
 
-const SITE_QUERY = `
-*[_type=="siteSettings"] {
-    footer
-}[0]
-`;
+type Props = {
+  site: any;
+};
 
-const Footer = async () => {
-  const site = await client.fetch(SITE_QUERY);
-
+const Footer: FC<Props> = async ({ site }) => {
   return (
     <footer className="bg-gray-100 pt-12 text-gray-900 mt-auto">
       <MaxWidthWrapper className="px-10 pb-12">
@@ -46,5 +42,7 @@ const Footer = async () => {
     </footer>
   );
 };
+
+Footer.displayName = "Footer";
 
 export default Footer;

@@ -33,4 +33,6 @@ const ArticleCard: FC<Props> = ({ shortDescription, slug, thumbnail, title }) =>
   );
 };
 
+ArticleCard.displayName = "ArticleCard";
+
 export default ArticleCard;

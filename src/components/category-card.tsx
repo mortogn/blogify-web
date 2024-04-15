@@ -26,4 +26,6 @@ const CategoryCard: FC<Props> = ({ slug, thumbnail, title }) => {
   );
 };
 
+CategoryCard.displayName = "CategoryCard";
+
 export default CategoryCard;

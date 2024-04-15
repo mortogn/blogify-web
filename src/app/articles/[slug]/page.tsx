@@ -1,4 +1,4 @@
-export const revalidate = 0;
+export const revalidate = 60;
 
 import { client, urlFor } from "@/lib/sanity";
 import { formatDate } from "@/utils/format";
