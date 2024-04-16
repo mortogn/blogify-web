@@ -4,6 +4,7 @@ import Link from "next/link";
 import Button from "./common/button";
 import NavItem from "./nav-item";
 import MaxWidthWrapper from "./max-width-wrapper";
+import MenuDrawer from "./disclosure/menu-drawer";
 
 const NavItems: Array<{
   label: string;
@@ -45,6 +46,9 @@ const Header = () => {
             ))}
           </ul>
         </nav>
+        <div className="md:hidden">
+          <MenuDrawer items={NavItems} />
+        </div>
       </MaxWidthWrapper>
     </header>
   );

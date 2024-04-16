@@ -21,7 +21,7 @@ const ArticleCard: FC<Props> = ({ shortDescription, slug, thumbnail, title }) =>
     <Link href={`/articles/${slug.current}`}>
       <div className="space-y-3 group">
         <div className="relative h-[180px]">
-          <Image className="object-cover rounded-md" src={urlFor(thumbnail.image)?.url() ?? ""} alt={thumbnail.alt ?? title} fill />
+          <Image className="object-cover rounded-md h-full w-full" src={urlFor(thumbnail.image)?.width(1200)?.url() ?? ""} height={850} width={650} alt={thumbnail.alt ?? title} />
         </div>
 
         <div className="space-y-2 px-2 lg:px-3">

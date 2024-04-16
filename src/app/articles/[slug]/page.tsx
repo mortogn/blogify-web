@@ -76,7 +76,7 @@ export default async function ArticleDetails({ params }: { params: { slug: strin
     <div className="relative">
       <div className="absolute top-0 left-0 right-0 -z-10">
         <div className="relative h-[450px]">
-          <Image src={urlFor(article.banner.image)?.url() ?? ""} alt={article.banner.alt ?? ""} fill className="object-cover rounded-md" />
+          <Image src={urlFor(article.banner.image)?.url() ?? ""} alt={article.banner.alt ?? ""} width={1280} height={450} className="object-cover h-full w-full rounded-md" />
         </div>
       </div>
 

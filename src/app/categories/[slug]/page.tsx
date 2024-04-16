@@ -52,7 +52,7 @@ export default async function CategoryDetails({ params }: { params: { slug: stri
     <div className="mt-10">
       <div className="flex items-center gap-8 flex-col md:flex-row">
         <div className="relative h-[200px] md:h-[150px] w-[400px]">
-          <Image src={urlFor(category.thumbnail)?.url() ?? ""} alt={category.title} fill className="object-cover rounded-md" />
+          <Image src={urlFor(category.thumbnail)?.url() ?? ""} alt={category.title} height={200} width={400} className="object-cover rounded-md h-full w-full" />
         </div>
 
         <div className="space-y-3">
